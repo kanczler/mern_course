@@ -1,0 +1,33 @@
+{
+  "name": "mern_course",
+  "version": "1.0.0",
+  "description": "mern shopping cart app",
+  "main": "server.js",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "react-router-bootstrap": "^0.25.0",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6"
+  },
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kanczler/mern_course.git"
+  },
+  "author": "Kanczler András",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kanczler/mern_course/issues"
+  },
+  "homepage": "https://github.com/kanczler/mern_course#readme"
+}
